@@ -11,12 +11,13 @@ Follow these steps to get MediSysPro up and running on your local machine:
    git clone https://github.com/hunter-dibs/Hospital_Backend.git
    cd Hospital_Backend
    pip install -r requirements.txt
-cp .env.example .env
-# Open .env in a text editor and set up the necessary configuration
-python manage.py generate_secret_key
-python manage.py migrate
-python manage.py loaddata seed_data.json
-python manage.py runserver
+   cp .env.example .env
+   # Open .env in a text editor and set up the necessary configuration
+   python manage.py generate_secret_key
+   python manage.py migrate
+   python manage.py loaddata seed_data.json
+   python manage.py runserver
+
 
 The application will be accessible at http://127.0.0.1:8000/
 
