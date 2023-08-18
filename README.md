@@ -6,20 +6,36 @@ Welcome to MediSysPro, a cutting-edge digital health system designed to revoluti
 
 Follow these steps to get MediSysPro up and running on your local machine:
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/hunter-dibs/Hospital_Backend.git
-   cd Hospital_Backend
-   pip install -r requirements.txt
-   cp .env.example .env
-   # Open .env in a text editor and set up the necessary configuration
-   python manage.py generate_secret_key
-   python manage.py migrate
-   python manage.py loaddata seed_data.json
-   python manage.py runserver
+## HOW TO RUN THIS PROJECT
+- Install Python(3.11.4) (Dont Forget to Tick Add to Path while installing Python)
+- Open Terminal and Execute Following Commands :
+```
+Steps:
+1. git clone: https://github.com/hunter-dibs/Soft_Lab_MediSysPro
+2. cd docapp
+3. py -m venv box
+4. pip install -r requirements.txt
+5. box\Scripts\activate.bat
+```
+- Apply Migrations and Runserver
+```
+py manage.py makemigrations userprofiles
+py manage.py migrate
+```
+- To Run Server
+```
+py manage.py runserver
+```
+- Now enter following URL in Your Browser Installed On Your Pc
+```
+http://127.0.0.1:8000/
+```
 
-
-The application will be accessible at http://127.0.0.1:8000/
+- Admin Access
+```
+username: admindb
+pass: 1234
+```
 
 
 ## 🏥 Overview
